@@ -1,12 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f8f9fa;
+  background: #1565b6;
   color: #222;
+     
 }
 
 h1, h2, h3 {

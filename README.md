@@ -1,7 +1,8 @@
 # SoftSell Solutions - Software Resale Marketing
 
 A modern, responsive React + Vite web app for buying and selling unused software licenses.  
-Includes dark/light mode toggle, animated navigation, and an AI-powered chat widget.
+Includes  animated navigation, and an AI-powered chat widget.  
+**Now styled with Bootstrap for a clean, professional UI.**
 
 ---
 
@@ -29,27 +30,43 @@ Visit [http://localhost:5173](http://localhost:5173) in your browser.
 ## 🛠️ Project Structure
 
 ```
-src/
-  components/
-    Header.jsx
-    Footer.jsx
-    ChatWidget.jsx
-    ThemeToggle.jsx
-    ...
-  styles/
-    global.css
-  App.jsx
-  main.jsx
-index.html
+software-resale-marketing/
+│
+├── public/
+│   └── favicon.ico
+│
+├── src/
+│   ├── components/
+│   │   ├── ChatWidget.jsx
+│   │   ├── ContactForm.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── HeroSection.jsx
+│   │   ├── HowItWorks.jsx
+│   │   ├── Testimonials.jsx
+│   │   ├── ThemeToggle.jsx
+│   │   └── WhyChooseUs.jsx
+│   │
+│   ├── styles/
+│   │   └── global.css
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── tailwind.config.js (if using Tailwind)
+└── README.md
 ```
 
 ---
 
-## 🌗 Dark/Light Mode
+## 🌗 Dark/Light Mode  // Not Implemented
 
 - Toggle button is fixed on the right side of the page.
 - Clicking it switches the entire site between dark and light mode.
-- Uses Tailwind CSS `darkMode: 'class'` strategy.
+- Uses Tailwind CSS `darkMode: 'class'` strategy (if Tailwind is present).
+- If using Bootstrap only, you may need to implement your own dark mode classes or use Bootstrap's dark utilities.
 
 ---
 
@@ -69,7 +86,7 @@ index.html
 ## ✨ Features
 
 - Responsive layout (mobile & desktop)
-- Modern UI with Tailwind CSS
+- Modern UI with Bootstrap
 - Animated navigation and sections (Framer Motion)
 - SEO meta tags in `index.html`
 - Accessible, intuitive chat UX
@@ -100,8 +117,9 @@ npm run build
   - Make sure `main.jsx` renders `<App />` directly.
 
 - **Dark mode not working:**  
-  - Ensure `tailwind.config.js` has `darkMode: 'class'`.
-  - Use `dark:` classes in your components.
+  - Ensure `tailwind.config.js` has `darkMode: 'class'` (if using Tailwind).
+  - Use `dark:` classes in your components (Tailwind).
+  - For Bootstrap, use Bootstrap's dark utilities or custom classes.
 
 ---
 
