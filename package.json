@@ -1,0 +1,32 @@
+{
+  "name": "software-resale-marketing",
+  "version": "1.0.0",
+  "description": "A marketing website for a software resale startup.",
+  "main": "src/main.jsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [
+    "software",
+    "resale",
+    "marketing",
+    "website"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "framer-motion": "^12.10.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefix": "^1.0.1",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.6",
+    "vite": "^5.2.0"
+  }
+}
