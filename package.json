@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "A marketing website for a software resale startup.",
   "main": "src/main.jsx",
+  "homepage": "https://addrtuser1988.github.io/softsell",
   "scripts": {
     "dev": "vite",
-    "build": "npm ci && npm run build",
-    "serve": "vite preview"
+    "build": "vite build",
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "software",
@@ -26,6 +29,7 @@
     "autoprefix": "^1.0.1",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "gh-pages": "^6.0.0"
   }
 }
